@@ -12,7 +12,14 @@ export default function ChallengeCard({ challenge }) {
         <span>{challenge.progress} / {challenge.total}</span>
         <strong>+{challenge.reward} XP</strong>
       </div>
-      <div className="progress-track progress-track--small">
+      <div
+        className="progress-track progress-track--small"
+        role="progressbar"
+        aria-valuenow={Math.round(progress)}
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-label={`${challenge.title} progress`}
+      >
         <div className="progress-fill" style={{ width: `${progress}%` }} />
       </div>
     </article>
