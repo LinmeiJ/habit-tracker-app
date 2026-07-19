@@ -1,0 +1,91 @@
+export const initialHabits = [
+  {
+    id: 1,
+    name: 'Morning workout',
+    category: 'Fitness',
+    icon: '🏃',
+    color: 'orange',
+    streak: 14,
+    longestStreak: 32,
+    completed: true,
+    xp: 15,
+    weeklyProgress: [true, true, true, true, true, true, true],
+  },
+  {
+    id: 2,
+    name: 'Read 20 minutes',
+    category: 'Learning',
+    icon: '📚',
+    color: 'purple',
+    streak: 8,
+    longestStreak: 21,
+    completed: false,
+    xp: 15,
+    weeklyProgress: [true, true, true, true, true, true, false],
+  },
+  {
+    id: 3,
+    name: 'Drink 8 glasses of water',
+    category: 'Wellness',
+    icon: '💧',
+    color: 'blue',
+    streak: 5,
+    longestStreak: 18,
+    completed: false,
+    xp: 10,
+    weeklyProgress: [true, true, false, true, true, true, false],
+  },
+  {
+    id: 4,
+    name: 'Meditate',
+    category: 'Mindfulness',
+    icon: '🧘',
+    color: 'green',
+    streak: 21,
+    longestStreak: 21,
+    completed: true,
+    xp: 20,
+    weeklyProgress: [true, true, true, true, true, true, true],
+  },
+];
+
+export const achievements = [
+  { id: 1, name: 'Week Warrior', icon: '🔥', rarity: 'Rare', unlocked: true, description: 'Maintain a 7-day streak.' },
+  { id: 2, name: 'Early Bird', icon: '🌅', rarity: 'Common', unlocked: true, description: 'Complete a habit before 7 AM.' },
+  { id: 3, name: 'Perfect Week', icon: '✨', rarity: 'Epic', unlocked: true, description: 'Complete every habit for 7 days.' },
+  { id: 4, name: 'Century Club', icon: '💯', rarity: 'Epic', unlocked: false, progress: 78, description: 'Complete 100 total habits.' },
+  { id: 5, name: 'Streak Master', icon: '👑', rarity: 'Legendary', unlocked: false, progress: 47, description: 'Maintain a 30-day streak.' },
+  { id: 6, name: 'Social Spark', icon: '👏', rarity: 'Rare', unlocked: false, progress: 60, description: 'Send 10 encouragements.' },
+];
+
+export const leaderboard = [
+  { rank: 1, name: 'Maya Chen', initials: 'MC', xp: 840, streak: 31, trend: '+2' },
+  { rank: 2, name: 'Jordan Lee', initials: 'JL', xp: 795, streak: 24, trend: '—' },
+  { rank: 3, name: 'Sam Rivera', initials: 'SR', xp: 720, streak: 19, trend: '+1' },
+  { rank: 4, name: 'You', initials: 'AM', xp: 645, streak: 21, trend: '+3', isCurrentUser: true },
+  { rank: 5, name: 'Noah Williams', initials: 'NW', xp: 610, streak: 12, trend: '-2' },
+  { rank: 6, name: 'Priya Shah', initials: 'PS', xp: 575, streak: 16, trend: '—' },
+];
+
+export const challenges = [
+  {
+    id: 1,
+    label: 'Daily challenge',
+    title: 'Power Hour',
+    description: 'Complete 3 habits within one hour.',
+    reward: 15,
+    progress: 2,
+    total: 3,
+    icon: '⚡',
+  },
+  {
+    id: 2,
+    label: 'Weekly quest',
+    title: 'Consistency Champion',
+    description: 'Earn 200 XP before the week ends.',
+    reward: 50,
+    progress: 145,
+    total: 200,
+    icon: '🏆',
+  },
+];
